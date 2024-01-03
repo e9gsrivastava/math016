@@ -4,6 +4,8 @@
 def solver(n):
     """this func does above task"""
     num = [2]
+    if n==0:
+        return 1
     for _ in range(n - 1):
         remainder = 0
         for i in reversed(range(len(num))):
@@ -15,4 +17,4 @@ def solver(n):
 
 
 if __name__ == "__main__":
-    print(solver(100))
+    print(solver(1000))
